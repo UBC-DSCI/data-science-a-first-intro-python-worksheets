@@ -5,9 +5,9 @@ To use these worksheets, you can either:
 
 1. Click on a "launch binder" button to open an interactive, but non-persistent, version of the notebook.
 
-2. Download this repository by clicking [here](https://github.com/UBC-DSCI/data-science-a-first-intro-python-worksheets/archive/refs/heads/main.zip) and follow our computer setup instructions [here](https://python.datasciencebook.ca/move-to-your-own-machine.html). The setup instructions should be followed to guarantee that your software environment is compatible with the worksheets.
+2. Download this repository by clicking [here](https://github.com/UBC-DSCI/data-science-a-first-intro-python-worksheets/archive/refs/heads/main.zip) and follow our computer setup instructions [here](https://python.datasciencebook.ca/setup.html). The setup instructions should be followed to guarantee that your software environment is compatible with the worksheets.
 
-Regardless of the method you choose to access them, we also recommend reading our [Combining code and text with Jupyter chapter](https://python.datasciencebook.ca/getting-started-with-jupyter.html) before starting out.
+Regardless of the method you choose to access them, we also recommend reading our [Combining code and text with Jupyter chapter](https://python.datasciencebook.ca/jupyter.html) before starting out.
 
 | Book chapter | View worksheet on GitHub | Launch worksheet on myBinder.org |
 |--------------|-----------|----|
@@ -22,7 +22,7 @@ Regardless of the method you choose to access them, we also recommend reading ou
 | [Clustering](https://python.datasciencebook.ca/clustering.html) | [view worksheet](py_worksheet_clustering/py_worksheet_clustering.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-DSCI/data-science-a-first-intro-python-worksheets/HEAD?labpath=py_worksheet_clustering%2Fpy_worksheet_clustering.ipynb) |
 | [Statistical inference (sampling)](https://python.datasciencebook.ca/inference.html) | [view worksheet](py_worksheet_inference1/py_worksheet_inference1.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-DSCI/data-science-a-first-intro-python-worksheets/HEAD?labpath=py_worksheet_inference1%2Fpy_worksheet_inference1.ipynb) |
 | [Statistical inference (bootstrapping)](https://python.datasciencebook.ca/inference.html) | [view worksheet](py_worksheet_inference2/py_worksheet_inference2.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-DSCI/data-science-a-first-intro-python-worksheets/HEAD?labpath=py_worksheet_inference2%2Fpy_worksheet_inference2.ipynb) |
-| [Collaboration with version control](https://python.datasciencebook.ca/Getting-started-with-version-control.html) | [view worksheet](py_worksheet_version_control/py_worksheet_version_control.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-DSCI/data-science-a-first-intro-python-worksheets/HEAD?labpath=py_worksheet_version_control%2Fpy_worksheet_version_control.ipynb) |
+| [Collaboration with version control](https://python.datasciencebook.ca/version-control.html) | [view worksheet](py_worksheet_version_control/py_worksheet_version_control.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UBC-DSCI/data-science-a-first-intro-python-worksheets/HEAD?labpath=py_worksheet_version_control%2Fpy_worksheet_version_control.ipynb) |
 
 ### Licence
 [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
