@@ -17,7 +17,7 @@ jobs:
         fetch-depth: '0'
         ref: 'main'
     - name: Build the docker image
-      run: docker build -t local < Dockerfile
+      run: docker build -t local .
     - name: Generate the environment file
       run: docker run --rm -v $(pwd):/home/jovyan/work local mamba env export > environment.yml
     - name: Commit the updated env
