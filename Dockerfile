@@ -2,7 +2,7 @@
 FROM ubcdsci/py-dsci-100:20230831022048aa49aa
 
 # Switch the working directory back to the homedir
-WORKDIR "${HOME}
+WORKDIR ${HOME}
 
 # Make sure the contents of our repo are in ${HOME} for binder
 COPY . ${HOME}
