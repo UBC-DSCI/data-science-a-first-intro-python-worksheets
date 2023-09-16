@@ -1,0 +1,42 @@
+name: Test worksheet generation
+on:
+  pull_request:
+    paths:
+      - Dockerfile
+      - environment.yml
+      - 'py_worksheet**'
+jobs:
+  test-worksheet:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        worksheet: [py_worksheet_intro, py_worksheet_reading, py_worksheet_wrangling, py_worksheet_viz, py_worksheet_version_control, py_worksheet_classification1, py_worksheet_classification2, py_worksheet_regression1, py_worksheet_regression2, py_worksheet_clustering, py_worksheet_inference1, py_worksheet_inference2]
+        envtype: [docker, conda]
+    steps:
+    - name: Checkout PR branch
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: '0'
+        ref: ${{ github.head_ref }}
+    - name: Build ${{ matrix.envtype }} environment for test
+      env:
+        ENVTYPE: ${{ matrix.envtype }}
+      run: |
+        if [[ $ENVTYPE == 'docker' ]]; then
+          echo "Building docker environment for assignment generation"
+          echo "RUN pip install nbgrader" >> Dockerfile
+          docker build -t graderimage .
+        else
+          echo "Building conda environment with nbgrader for generation test"
+          conda env update --file environment.yml
+          pip install nbgrader
+        fi
+    - name: Run nbgrader assignment generation
+      run: |
+        if [[ $ENVTYPE == 'docker' ]]; then
+          echo "Running nbgrader generate assignment in a docker container"
+          docker run --rm graderimage nbgrader generate_assignment --force ${{ matrix.worksheet }}
+        else
+          echo "Running nbgrader generate assignment in the conda environment"
+          nbgrader generate_assignment --force ${{ matrix.worksheet }}
+        fi
