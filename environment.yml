@@ -15,4 +15,3 @@ dependencies:
   - pip:
       - git+https://github.com/scikit-learn/scikit-learn@7de59b2017f39048880a3858d32c8caef9308954
       - vl-convert-python==0.13.1
-prefix: /opt/conda
