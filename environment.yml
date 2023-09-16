@@ -11,6 +11,7 @@ dependencies:
   - vegafusion-python-embed=1.4.0
   - vegafusion=1.4.0
   - SQLAlchemy=2.0.20
+  - pip=23.2.1
   - pip:
       - git+https://github.com/scikit-learn/scikit-learn@7de59b2017f39048880a3858d32c8caef9308954
       - vl-convert-python==0.13.1
